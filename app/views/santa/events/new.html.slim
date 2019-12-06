@@ -1,0 +1,89 @@
+div.header
+  div.container
+    div.header_left onclick="window.location='#'"
+      .chimney
+        = image_tag "chimney"
+      .reinder
+        = show_svg('svg0.svg')
+      .santa
+        = show_svg('svg1.svg')
+    div.header_right
+      .logo
+        = image_tag "secret_santa"
+
+div.wrapper style='height: auto !important;'
+  div.container style='height: auto !important;'
+    div.intro.row.align-items-center
+      div.col-xs-12.col-sm-8.col-md-8
+        h1
+          | Qu'est-ce que Secret Santa ?
+        p
+          | Secret Santa Organizer est un organiseur en ligne
+          b
+            | &nbsp;
+            | Secret Santa Organizer est un organiseur en ligne
+          | ! Organisez une Secret Santa party avec vos amis, votre famille ou vos collègues. Après avoir reçu l'e-mail de Secret Santa, vous pourrez ajouter votre propre
+          b
+            | &nbsp;
+            | liste de souhaits
+          | , qui sera ensuite délivrée à votre Père-Noël secret
+        p
+          | Chaque année, autour de la période de
+          b
+            | &nbsp;
+            | Noël
+          | , les personnes du monde entier s'échangent des cadeaux.
+          br
+          | Afin de garder les choses intéressantes, vous pouvez assigner au hasard une personne à une autre afin qu'elles offrent un présent aux autres.
+
+      div.col-sm-4.col-md-4.hidden-xs
+        div.steps
+          h2
+            | Votre fête
+            br
+            small
+              | en
+              span.accent
+                | &nbsp;
+                | 3 étapes
+          ul.liststyle1
+            li.mb-2
+              span.icon-steps 1
+              | &nbsp;
+              | Inscrivez vos particpants
+            li.mb-2
+              span.icon-steps 2
+              | &nbsp;
+              | Ajoutez un message
+            li.mb-2
+              span.icon-steps 3
+              | &nbsp;
+              | Envoyez!
+          div.text-center
+            a.btn-started href="#mysanta"
+              | Commencez !
+    div.content-container style="height: auto !important;"
+      div.santa-content.mb-5 style="height: auto !important;"
+        h2
+          | Ajoutez les participants
+      - event = Event.new
+      - event.participants.build
+      = simple_form_for event, url: santa_events_path, action: :create do |f|
+        div.form
+          div.form-group.form-create-party
+            = f.input :date, label:           "Date"
+            = f.input :location, label:       "Lieu"
+            = f.input :maximum_price, label:  'Montant à dépenser'
+            br
+            - 4.times do |j|
+              = f.fields_for :participants do |p|
+                = p.label :name, "Nom participant"
+                = p.text_field :name
+                = p.label :email, "Email"
+                = p.text_field :email
+              br
+              br
+            = f.input :message, as: :text, label:  'Ajoutez un message personnel'
+            = f.button :submit,
+              "Créer votre événement"
+            br

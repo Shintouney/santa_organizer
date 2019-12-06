@@ -1,0 +1,22 @@
+default: &default
+  adapter:   postgresql
+  encoding:  unicode
+  username:  test_santa
+  host:      localhost
+  password:  "password1"
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: santa_development
+test:
+  <<: *default
+  database: santa_test
+
+production:
+  <<: *default
+  database: santa_production
+  username: santa
+  password: <%= ENV['SANTA_DATABASE_PASSWORD'] %>

@@ -1,0 +1,29 @@
+/* line 1, app/assets/stylesheets/event.sass.erb */
+.wrapper {
+  max-width: 93.75em;
+  margin: 0 auto;
+}
+
+/* line 4, app/assets/stylesheets/event.sass.erb */
+.wrapper h2 {
+  font-size: 1em;
+}
+
+/* line 7, app/assets/stylesheets/event.sass.erb */
+.footer-santa {
+  background: url(/assets/footer-bg_santa-908cb93f5f167df4cc600a9339d6a02d12ebaf3923ca4382312e359b263447a4.png) no-repeat 100% 0;
+  padding-top: 65px;
+  padding-bottom: 35px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #6e6e6e;
+}
+
+/* line 15, app/assets/stylesheets/event.sass.erb */
+.bg {
+  font-family: 'Strait', sans-serif;
+}
+/*
+
+
+*/

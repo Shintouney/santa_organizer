@@ -1,0 +1,153 @@
+/* line 1, app/assets/stylesheets/event.sass.erb */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 4, app/assets/stylesheets/event.sass.erb */
+.wrapper {
+  max-width: 93.75em;
+  margin: 0 auto;
+}
+
+/* line 8, app/assets/stylesheets/event.sass.erb */
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+/* line 10, app/assets/stylesheets/event.sass.erb */
+p {
+  margin: 0 0 14px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 14, app/assets/stylesheets/event.sass.erb */
+h1 {
+  font-family: 'Strait', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* line 21, app/assets/stylesheets/event.sass.erb */
+h2 {
+  font-family: 'Strait', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* line 28, app/assets/stylesheets/event.sass.erb */
+.steps {
+  padding: 25px 20px 20px;
+  border: 1px solid #e4e2e2;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+
+/* line 33, app/assets/stylesheets/event.sass.erb */
+.steps ul.liststyle1 {
+  margin: 0 0 16px;
+  padding: 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* line 37, app/assets/stylesheets/event.sass.erb */
+.steps ul.liststyle1 li {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  line-height: 29px;
+}
+
+/* line 42, app/assets/stylesheets/event.sass.erb */
+.steps .mb-2, .steps .my-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+/* line 45, app/assets/stylesheets/event.sass.erb */
+.col-md-8, .col-sm-8 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 51, app/assets/stylesheets/event.sass.erb */
+.col-md-4, .col-sm-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 58, app/assets/stylesheets/event.sass.erb */
+  .col-md-8 {
+    -webkit-box-flex: 0;
+            flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+
+@media (min-width: 576px) {
+  /* line 63, app/assets/stylesheets/event.sass.erb */
+  .col-sm-8 {
+    -webkit-box-flex: 0;
+            flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 68, app/assets/stylesheets/event.sass.erb */
+  .col-md-4 {
+    -webkit-box-flex: 0;
+            flex: 0 0 33.33%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (min-width: 576px) {
+  /* line 73, app/assets/stylesheets/event.sass.erb */
+  .col-sm-4 {
+    -webkit-box-flex: 0;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+/* line 77, app/assets/stylesheets/event.sass.erb */
+.container {
+  max-width: 940px;
+  padding: 0 30px;
+  width: auto;
+  position: relative;
+}
+
+/* line 83, app/assets/stylesheets/event.sass.erb */
+.row {
+  display: -webkit-box;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+}
+
+/* line 89, app/assets/stylesheets/event.sass.erb */
+.align-items-center {
+  -webkit-box-align: center !important;
+          align-items: center !important;
+}
+
+/* line 92, app/assets/stylesheets/event.sass.erb */
+.footer-santa {
+  background: url(/assets/footer-bg_santa-908cb93f5f167df4cc600a9339d6a02d12ebaf3923ca4382312e359b263447a4.png) no-repeat 100% 0;
+  padding-top: 65px;
+  padding-bottom: 35px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #6e6e6e;
+}

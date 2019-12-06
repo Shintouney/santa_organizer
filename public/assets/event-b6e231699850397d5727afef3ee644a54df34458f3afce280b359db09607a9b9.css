@@ -1,0 +1,98 @@
+/* line 1, app/assets/stylesheets/event.sass.erb */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 4, app/assets/stylesheets/event.sass.erb */
+.wrapper {
+  max-width: 93.75em;
+  margin: 0 auto;
+}
+
+/* line 7, app/assets/stylesheets/event.sass.erb */
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+/* line 9, app/assets/stylesheets/event.sass.erb */
+* h1, :after h1, :before h1 {
+  font-family: 'Strait', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  /* line 16, app/assets/stylesheets/event.sass.erb */
+  .col-md-8 {
+    -webkit-box-flex: 0;
+            flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+
+@media (min-width: 576px) {
+  /* line 20, app/assets/stylesheets/event.sass.erb */
+  .col-sm-8 {
+    -webkit-box-flex: 0;
+            flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 24, app/assets/stylesheets/event.sass.erb */
+  .col-md-4 {
+    -webkit-box-flex: 0;
+            flex: 0 0 33.33%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (min-width: 576px) {
+  /* line 28, app/assets/stylesheets/event.sass.erb */
+  .col-sm-4 {
+    -webkit-box-flex: 0;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+/* line 32, app/assets/stylesheets/event.sass.erb */
+.container {
+  max-width: 940px;
+  padding: 0 30px;
+  width: auto;
+  position: relative;
+}
+
+/* line 37, app/assets/stylesheets/event.sass.erb */
+.row {
+  display: -webkit-box;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+}
+
+/* line 42, app/assets/stylesheets/event.sass.erb */
+.align-items-center {
+  -webkit-box-align: center !important;
+          align-items: center !important;
+}
+
+/* line 45, app/assets/stylesheets/event.sass.erb */
+.footer-santa {
+  background: url(/assets/footer-bg_santa-908cb93f5f167df4cc600a9339d6a02d12ebaf3923ca4382312e359b263447a4.png) no-repeat 100% 0;
+  padding-top: 65px;
+  padding-bottom: 35px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #6e6e6e;
+}
+
+/* line 53, app/assets/stylesheets/event.sass.erb */
+.bg {
+  font-family: 'Strait', sans-serif;
+}
