@@ -51,7 +51,6 @@ class Santa::EventsController < ApplicationController
     event.participants.each do |participant|
       destinataire = Participant.find(participant.participant_id)
       message = "Bonjour, #{participant.name} tu devras effectuer un cadeau à destinataire: #{destinataire.email}"
-      raise
     end
   end
 
